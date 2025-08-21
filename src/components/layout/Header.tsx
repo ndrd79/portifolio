@@ -51,6 +51,14 @@ const Header: React.FC = () => {
               Serviços
             </Link>
             <Link
+              to="/consultoria"
+              className={`transition-colors duration-200 font-medium ${
+                isActive('/consultoria') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'
+              }`}
+            >
+              Consultoria
+            </Link>
+            <Link
               to="/portfolio"
               className={`transition-colors duration-200 font-medium ${
                 isActive('/portfolio') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'
@@ -108,6 +116,15 @@ const Header: React.FC = () => {
                 }`}
               >
                 Serviços
+              </Link>
+              <Link
+                to="/consultoria"
+                onClick={closeMenu}
+                className={`transition-colors duration-200 font-medium text-left ${
+                  isActive('/consultoria') ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'
+                }`}
+              >
+                Consultoria
               </Link>
               <Link
                 to="/portfolio"
