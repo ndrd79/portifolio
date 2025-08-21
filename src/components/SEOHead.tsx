@@ -71,7 +71,7 @@ const SEOHead: React.FC<SEOHeadProps> = ({ seo }) => {
           "logo": `${siteUrl}/logo.png`,
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+55-11-99999-9999",
+            "telephone": "+5544984355545",
             "contactType": "customer service",
             "email": "contato@devstudio.com"
           },

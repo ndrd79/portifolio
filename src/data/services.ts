@@ -13,8 +13,7 @@ export const services: Service[] = [
       'Painel administrativo',
       'Certificado SSL incluído',
       'Suporte técnico'
-    ],
-    priceRange: 'A partir de R$ 2.500'
+    ]
   },
   {
     id: 'aplicacoes-web',
@@ -28,8 +27,7 @@ export const services: Service[] = [
       'Autenticação e segurança',
       'Deploy automatizado',
       'Monitoramento e analytics'
-    ],
-    priceRange: 'A partir de R$ 8.000'
+    ]
   },
   {
     id: 'solucoes-personalizadas',
@@ -43,7 +41,6 @@ export const services: Service[] = [
       'Treinamento da equipe',
       'Suporte e manutenção',
       'Documentação completa'
-    ],
-    priceRange: 'Sob consulta'
+    ]
   }
 ];

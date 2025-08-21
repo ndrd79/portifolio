@@ -27,7 +27,6 @@ export interface Service {
   description: string;
   icon: string;
   features: string[];
-  priceRange: string;
 }
 
 // Tipos para resposta da API

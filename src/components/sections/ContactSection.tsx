@@ -68,24 +68,18 @@ const ContactSection: React.FC = () => {
     {
       icon: Phone,
       title: 'Telefone',
-      value: '+55 (11) 99999-9999',
-      link: 'tel:+5511999999999'
+      value: '(44) 98435-5545',
+      link: 'tel:+5544984355545'
     },
     {
       icon: MapPin,
       title: 'Localização',
-      value: 'São Paulo, SP - Brasil',
-      link: '#'
+      value: 'Maria Helena - PR',
+      link: 'https://maps.google.com/?q=Maria+Helena,+PR'
     }
   ];
 
-  const budgetOptions = [
-    'Até R$ 5.000',
-    'R$ 5.000 - R$ 15.000',
-    'R$ 15.000 - R$ 30.000',
-    'Acima de R$ 30.000',
-    'Prefiro não informar'
-  ];
+  
 
   const timelineOptions = [
     'Urgente (até 2 semanas)',
@@ -282,7 +276,7 @@ const ContactSection: React.FC = () => {
                       type="tel"
                       id="phone"
                       className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                      placeholder="(11) 99999-9999"
+                      placeholder="(44) 98435-5545"
                     />
                   </div>
 
@@ -305,43 +299,23 @@ const ContactSection: React.FC = () => {
                   </div>
                 </div>
 
-                {/* Orçamento e Prazo */}
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="budget" className="block text-sm font-medium text-gray-700 mb-2">
-                      Orçamento Estimado
-                    </label>
-                    <select
-                      {...register('budget')}
-                      id="budget"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                    >
-                      <option value="">Selecione uma faixa</option>
-                      {budgetOptions.map((option, index) => (
-                        <option key={index} value={option}>
-                          {option}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-
-                  <div>
-                    <label htmlFor="timeline" className="block text-sm font-medium text-gray-700 mb-2">
-                      Prazo Desejado
-                    </label>
-                    <select
-                      {...register('timeline')}
-                      id="timeline"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                    >
-                      <option value="">Selecione um prazo</option>
-                      {timelineOptions.map((option, index) => (
-                        <option key={index} value={option}>
-                          {option}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
+                {/* Prazo */}
+                <div>
+                  <label htmlFor="timeline" className="block text-sm font-medium text-gray-700 mb-2">
+                    Prazo Desejado
+                  </label>
+                  <select
+                    {...register('timeline')}
+                    id="timeline"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                  >
+                    <option value="">Selecione um prazo</option>
+                    {timelineOptions.map((option, index) => (
+                      <option key={index} value={option}>
+                        {option}
+                      </option>
+                    ))}
+                  </select>
                 </div>
 
                 {/* Mensagem */}

@@ -99,18 +99,13 @@ const ServicesSection: React.FC = () => {
                     ))}
                   </ul>
 
-                  {/* Price and CTA */}
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <div className="text-sm text-gray-500 mb-1">Investimento</div>
-                      <div className="text-lg font-bold text-gray-900">{service.priceRange}</div>
-                    </div>
-                    
+                  {/* CTA */}
+                  <div className="flex justify-center">
                     <button
                       onClick={() => scrollToSection('contato')}
                       className="group/btn bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-lg font-medium hover:shadow-lg transition-all duration-200 flex items-center space-x-2"
                     >
-                      <span>Solicitar</span>
+                      <span>Solicitar Orçamento</span>
                       <ArrowRight className="h-4 w-4 group-hover/btn:translate-x-1 transition-transform duration-200" />
                     </button>
                   </div>

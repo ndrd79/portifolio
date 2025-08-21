@@ -1,6 +1,11 @@
 import React from 'react';
 import SEOHead from '../components/SEOHead';
 import HeroSection from '../components/sections/HeroSection';
+import ServicesPreview from '../components/sections/ServicesPreview';
+import StatsSection from '../components/sections/StatsSection';
+import TestimonialsSection from '../components/sections/TestimonialsSection';
+import TechnologiesSection from '../components/sections/TechnologiesSection';
+import CTASection from '../components/sections/CTASection';
 
 const Home: React.FC = () => {
   return (
@@ -14,6 +19,11 @@ const Home: React.FC = () => {
         }}
       />
       <HeroSection />
+      <ServicesPreview />
+      <StatsSection />
+      <TestimonialsSection />
+      <TechnologiesSection />
+      <CTASection />
     </>
   );
 };

@@ -41,5 +41,15 @@ export const projects: Project[] = [
     technologies: ['Next.js', 'Tailwind CSS', 'Contentful', 'Vercel'],
     category: 'website',
     createdAt: new Date('2024-04-05')
+  },
+  {
+    id: '5',
+    title: 'Guia Digital Interativo',
+    description: 'Aplicação web interativa com interface moderna e funcionalidades avançadas para navegação e consulta de informações.',
+    imageUrl: 'https://trae-api-us.mchost.guru/api/ide/v1/text_to_image?prompt=interactive%20digital%20guide%20modern%20web%20app%20clean%20interface%20blue%20purple%20gradient&image_size=landscape_16_9',
+    demoUrl: 'https://guia-1z4gryx2q-fernandos-projects-1a080236.vercel.app/',
+    technologies: ['React', 'TypeScript', 'Tailwind CSS', 'Vite', 'Vercel'],
+    category: 'webapp',
+    createdAt: new Date('2024-05-15')
   }
 ];
